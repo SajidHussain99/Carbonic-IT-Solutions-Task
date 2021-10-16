@@ -103,8 +103,7 @@ nav ul li a:hover {
 }
 
 /* top-banner styling */
-.top-banner-c1 {
-}
+
 .apps-btns,
 .apps-btns:hover,
 .apps-btns:focus {
@@ -124,9 +123,18 @@ nav ul li a:hover {
 }
 
 .mobile {
-  /* transform: skew(10deg, 50deg); */
-  /* transform: translate(120px, 50%); */
-  /* transform: matrix3d(3, 0.2, 0.8, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1); */
+  margin-top: 10%;
+  transform: rotate3d(-250, 110, 150, 80deg);
+}
+.top-banner-img1 {
+  margin-top: -5%;
+  height: 150px;
+  width: 150px;
+  transform: rotate3d(-300, 110, 140, 80deg);
+}
+.top-banner-img2 {
+  height: 200px;
+  width: 200px;
 }
 
 /* /////////Cards section ///////// */
@@ -343,6 +351,16 @@ nav ul li a:hover {
     height: 300px;
     width: 300px;
     object-fit: contain;
+  }
+  .mobile {
+    /* margin-top: -10%; */
+    transform: rotate3d(-200, 10, 90, 80deg);
+  }
+  .top-banner-img1 {
+    /* margin-top: -5%; */
+    height: 150px;
+    width: 150px;
+    transform: rotate3d(-300, 110, 140, 80deg);
   }
 }
 

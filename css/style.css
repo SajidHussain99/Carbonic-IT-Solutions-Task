@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+}
+.brandName {
+  height: 50px;
+  width: 60px;
+  cursor: pointer;
+}
+
+nav .menu-btn i {
+  color: #1b1b1b;
+  font-size: 22px;
+  cursor: pointer;
+}
+#header-menu {
+  display: none;
+}
+#checkboxClick:checked ~ .menu-btn i::before {
+  content: "\f00d";
+}
+#checkboxClick:checked ~ ul {
+  left: 0%;
+}
+#checkboxClick {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  transition: 0.4s ease;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #1b1b1b;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  font-family: "Teko", sans-serif;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  z-index: 5px;
+  color: #1b1b1b;
+  transition: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+@media (max-width: 991.98px) {
+  nav ul {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #f8f8f8;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    color: #1b1b1b;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: #000;
+  }
+  #header-menu {
+    display: block;
+  }
+}
+/* inner-body styling  */
+
+.inner-body {
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+}
+
+/* top-banner styling */
+.top-banner-c1 {
+}
+.apps-btns,
+.apps-btns:hover,
+.apps-btns:focus {
+  background-color: black;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 10%;
+  padding: 5px 10px;
+  width: auto;
+}
+
+.app-btn-heading {
+  font-size: 0.8rem;
+}
+.get-it-on {
+  font-size: 0.6rem;
+}
+
+.mobile {
+  /* transform: skew(10deg, 50deg); */
+  /* transform: translate(120px, 50%); */
+  /* transform: matrix3d(3, 0.2, 0.8, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1); */
+}
+
+/* /////////Cards section ///////// */
+.my-card {
+  height: 260px;
+  width: 310px;
+  border-radius: 3%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: none;
+  padding: 37px;
+}
+.my-card:hover {
+  transform: translateY(-7px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+.card-inner-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 8%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* who can use it section */
+
+.img-div {
+  height: 260px;
+  width: 310px;
+}
+
+/* //////////traditional business cards section  */
+
+.c-card {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: black;
+  border: 13px solid #fff;
+  -webkit-box-shadow: 1px -5px 9px 7px #dae1e7;
+  box-shadow: 1px -5px 9px 7px #dae1e7;
+}
+.c-text {
+  color: #fff;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+.count-num {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* /////////testimonial images ////////// */
+.tes-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 7px 4px rgba(218, 225, 231, 0.75);
+  box-shadow: 0px 0px 7px 4px rgba(218, 225, 231, 0.75);
+}
+.tes-c-img {
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+}
+.profession {
+  color: #db31f1;
+}
+.arrow-btn {
+  font-size: 1.6rem;
+}
+.btn-right,
+.btn-left {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ff8672;
+  padding: 5px 15px;
+}
+.btn-right:hover {
+  background-color: black;
+  color: #ff8672;
+  border-top-right-radius: 70%;
+}
+.btn-left:hover {
+  background-color: black;
+  color: #ff8672;
+  border-top-left-radius: 70%;
+}
+
+/* ///////Pricing Cards//////// */
+.p-card {
+  height: 320px;
+  width: 270px;
+  background-color: #f8f8f8;
+  border-radius: 2%;
+  text-align: center;
+  padding: 60px 15px;
+}
+.p-card:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scaleY(1.1001);
+  transition: all 0.8s ease;
+}
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.p-card-btn {
+  padding: 5px 15px;
+  -webkit-border-radius: 40px;
+  /* -moz-border-radius: 40px; */
+  border-radius: 40px;
+  border: none;
+  background-color: #d8d8d8;
+}
+.p-card-btn:hover {
+  color: #fff;
+  background-color: #4c4c4c;
+}
+
+/* /////////////////FAQ'S SECTION /////////// */
+.faq-card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* z-index: 20px; */
+}
+.accordian-btns {
+  border: none;
+  background-color: transparent;
+  width: auto;
+}
+
+/* /////////footer section ///////// */
+.footer-section {
+  background-color: rgb(226, 219, 233);
+}
+.f-img-div {
+  height: 60px;
+  width: 80px;
+}
+
+.contacts span {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.social-div {
+  border-radius: 50%;
+  background-color: #f6f2fe;
+  height: 40px;
+  width: 40px;
+}
+.social-div:hover {
+  background-color: #000;
+}
+.social-icons {
+  border-radius: 50%;
+  color: thistle;
+  font-size: 1rem;
+}
+.social-icons:hover {
+  color: #fff;
+}
+
+.f-c2 {
+  margin-top: 40px;
+  font-weight: bold;
+}
+.fc2-links a {
+  color: black;
+  font-size: 1rem;
+}
+.f-input,
+.f-input:hover,
+.f-input:focus {
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.f-send-icon {
+  padding-top: 5px;
+  font-size: 1.6rem;
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.f-copyrights {
+  background-color: #f9f9f9;
+}
+
+/* /////////////////////Responsive styling code ////////////// */
+
+@media (max-width: 575.9px) {
+  .c-card {
+    height: 110px;
+    width: 110px;
+    border: 8px solid #fff;
+  }
+  .c-text {
+    color: #fff;
+    font-size: 0.5rem;
+  }
+  .count-num {
+    font-size: 0.7rem;
+  }
+
+  .tes-c-img {
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}

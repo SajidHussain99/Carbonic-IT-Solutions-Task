@@ -110,7 +110,7 @@ nav ul li a:hover {
   background-color: black;
   color: #fff;
   margin-right: 10px;
-  border-radius: 10%;
+  border-radius: 30px;
   padding: 5px 10px;
   width: auto;
 }
@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 .mobile {
   margin-top: 10%;
-  transform: rotate3d(-250, 110, 150, 80deg);
+  transform: rotate3d(-290, 180, 150, 80deg);
 }
 .top-banner-img1 {
   margin-top: -5%;

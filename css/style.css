@@ -149,6 +149,10 @@ nav ul li a:hover {
   -webkit-box-shadow: 1px -5px 9px 7px #dae1e7;
   box-shadow: 1px -5px 9px 7px #dae1e7;
 }
+.c-card:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.7s;
+}
 .c-text {
   color: #fff;
   font-size: 0.9rem;

@@ -141,8 +141,8 @@ nav ul li a:hover {
 /* //////////traditional business cards section  */
 
 .c-card {
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   border-radius: 50%;
   background-color: black;
   border: 13px solid #fff;
@@ -189,15 +189,19 @@ nav ul li a:hover {
   color: #ff8672;
   padding: 5px 15px;
 }
-.btn-right:hover {
+.btn-right:hover,
+.btn-right:focus {
   background-color: black;
   color: #ff8672;
-  border-top-right-radius: 70%;
+  -webkit-clip-path: polygon(60% 0, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(60% 0, 100% 100%, 0 100%, 0 0);
 }
-.btn-left:hover {
+.btn-left:hover,
+.btn-left:focus {
   background-color: black;
   color: #ff8672;
-  border-top-left-radius: 70%;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 40% 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 40% 0);
 }
 
 /* ///////Pricing Cards//////// */
@@ -220,7 +224,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 .p-card-btn {
-  padding: 5px 15px;
+  padding: 8px 20px;
   -webkit-border-radius: 40px;
   /* -moz-border-radius: 40px; */
   border-radius: 40px;
@@ -235,7 +239,12 @@ nav ul li a:hover {
 /* /////////////////FAQ'S SECTION /////////// */
 .faq-card {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  /* z-index: 20px; */
+}
+.faq-card:hover {
+  transform: translateY(7px);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 0.7s ease;
 }
 .accordian-btns {
   border: none;
